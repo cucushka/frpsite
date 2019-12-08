@@ -1,0 +1,91 @@
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+     <title>FuRP | Покупка</title>
+    <link href="./oplata_files/css" rel="stylesheet">
+    <link href="./oplata_files/order.css" rel="stylesheet">
+    <link rel="shortcut icon" href="https://lh3.googleusercontent.com/CjEiymWyjHX4LEEKtWO1LrS9LoA08WG_afTLWWkP8AmyOfc9wBvf7orEIuYLCCegBvHNkMJ3=w16383" type="image/x-icon">
+    <link rel="canonical" href="https://mcpehost.ru/order">
+    <style>
+      select *{color: black !important;}
+      .price3{
+        left: 2px !important;
+      }
+      .price2{
+        left: 6px !important;
+        top: 22px !important;
+      }
+      #plans > div > div:nth-child(4) .tarif-price {
+        color: #F06292
+      }
+    </style>
+  <body>
+    
+    <div id="modal" style="opacity: 1; display: none;">
+      <div>
+        <h2>Допущена ошибка!</h2>
+        <span>Указанный E-mail в неправильном формате. Пожалуйста, приведи свой E-mail к виду example@domain.com.</span>
+        <button class="button">Закрыть</button>
+      </div>
+    </div>
+    <div id="plans" style="display: none;">
+      <h2>Выбери тарифный план</h2>
+      <div id="PEplans" style="display: none"><div><div class="dirt"><svg viewBox="0 0 96 96"><switch><polygon class="st0" points="0.1 0 0.1 96 32.1 96 32.1 64 32.1 64 64.1 64 64.1 32 96.1 32 96.1 0"></polygon></switch></svg><span>0 RUB</span></div><div class="tarif-name">FREE</div><div class="tarif-price">Бесплатно</div><div class="tarif-info"><span><dark>CPU:</dark>1 vCPU (4.2 Ghz)</span><span><dark>RAM:</dark><span>1024 Мбайт (DDR4)</span></span><span><dark>SSD:</dark><span>2048 Мбайт</span></span><span><dark>Слоты:</dark>5 слотов</span></div><span class="tarif-span">Тарифный план для тестирования качества наших услуг, cервер создаётся ровно на 2 часа.</span><button class="button" tarif="0">Выбрать тариф</button></div><div><div class="dirt"><svg viewBox="0 0 96 96"><switch><polygon class="st0" points="0.1 0 0.1 96 32.1 96 32.1 64 32.1 64 64.1 64 64.1 32 96.1 32 96.1 0"></polygon></switch></svg><span class="price2">75 RUB</span></div><div class="tarif-name">MINIMAL</div><div class="tarif-price">75 RUB в месяц</div><div class="tarif-info"><span><dark>CPU:</dark>0.33 vCPU (4.2 Ghz)</span><span><dark>RAM:</dark><span>512 Мбайт (DDR4)</span></span><span><dark>SSD:</dark><span>768 Мбайт</span></span><span><dark>Слоты:</dark>Без ограничений</span></div><span class="tarif-span">Самый бюджетный тарифный план, поддержка ядер исключительно семейства PocketMine-MP.</span><button class="button" tarif="4">Выбрать тариф</button></div><div><div class="dirt"><svg viewBox="0 0 96 96"><switch><polygon class="st0" points="0.1 0 0.1 96 32.1 96 32.1 64 32.1 64 64.1 64 64.1 32 96.1 32 96.1 0"></polygon></switch></svg><span class="price3">165 RUB</span></div><div class="tarif-name">START</div><div class="tarif-price">165 RUB в месяц</div><div class="tarif-info"><span><dark>CPU:</dark>1 vCPU (4.2 Ghz)</span><span><dark>RAM:</dark><span>1024 Мбайт (DDR4)</span></span><span><dark>SSD:</dark><span>2048 Мбайт</span></span><span><dark>Слоты:</dark>Без ограничений</span></div><span class="tarif-span">Тарифный план отлично подойдет начинающему серверу, идеальное соотношение цены и качества.</span><button class="button" tarif="1">Выбрать тариф</button></div><div><div class="dirt"><svg viewBox="0 0 96 96"><switch><polygon class="st0" points="0.1 0 0.1 96 32.1 96 32.1 64 32.1 64 64.1 64 64.1 32 96.1 32 96.1 0"></polygon></switch></svg><span class="price3">330 RUB</span></div><div class="tarif-name">MEGA</div><div class="tarif-price">330 RUB в месяц</div><div class="tarif-info"><span><dark>CPU:</dark>2 vCPU (4.2 Ghz)</span><span><dark>RAM:</dark><span>2048 Мбайт (DDR4)</span></span><span><dark>SSD:</dark><span>4096 Мбайт</span></span><span><dark>Слоты:</dark>Без ограничений</span></div><span class="tarif-span">Золотая середина! Отличные характеристики за относительно небольшую стоимость.</span><button class="button" tarif="3">Выбрать тариф</button></div><div><div class="dirt"><svg viewBox="0 0 96 96"><switch><polygon class="st0" points="0.1 0 0.1 96 32.1 96 32.1 64 32.1 64 64.1 64 64.1 32 96.1 32 96.1 0"></polygon></switch></svg><span class="price3">660 RUB</span></div><div class="tarif-name">UNLIMIT</div><div class="tarif-price">660 RUB в месяц</div><div class="tarif-info"><span><dark>CPU:</dark>4 vCPU (4.2 Ghz)</span><span><dark>RAM:</dark><span>4096 Мбайт (DDR4)</span></span><span><dark>SSD:</dark><span>8192 Мбайт</span></span><span><dark>Слоты:</dark>Без ограничений</span></div><span class="tarif-span">Максимальный тарифный план, подойдёт проектам, которым требуется максимум ресурсов.</span><button class="button" tarif="2">Выбрать тариф</button></div></div>
+      <div id="PCplans"><div><div class="dirt"><svg viewBox="0 0 96 96"><switch><polygon class="st0" points="0.1 0 0.1 96 32.1 96 32.1 64 32.1 64 64.1 64 64.1 32 96.1 32 96.1 0"></polygon></switch></svg><span>0 RUB</span></div><div class="tarif-name">FREE</div><div class="tarif-price">Бесплатно</div><div class="tarif-info"><span><dark>CPU:</dark>1 vCPU (4.2 Ghz)</span><span><dark>RAM:</dark><span>2048 Мбайт (DDR4)</span></span><span><dark>SSD:</dark><span>4096 Мбайт</span></span><span><dark>Слоты:</dark>5 слотов</span></div><span class="tarif-span">Тарифный план для тестирования качества наших услуг, cервер создаётся ровно на 2 часа.</span><button class="button" tarif="0">Выбрать тариф</button></div><div><div class="dirt"><svg viewBox="0 0 96 96"><switch><polygon class="st0" points="0.1 0 0.1 96 32.1 96 32.1 64 32.1 64 64.1 64 64.1 32 96.1 32 96.1 0"></polygon></switch></svg><span class="price3">245 RUB</span></div><div class="tarif-name">START</div><div class="tarif-price">245 RUB в месяц</div><div class="tarif-info"><span><dark>CPU:</dark>1 vCPU (4.2 Ghz)</span><span><dark>RAM:</dark><span>2048 Мбайт (DDR4)</span></span><span><dark>SSD:</dark><span>4096 Мбайт</span></span><span><dark>Слоты:</dark>Без ограничений</span></div><span class="tarif-span">Тарифный план отлично подойдет начинающему серверу, идеальное соотношение цены и качества.</span><button class="button" tarif="1">Выбрать тариф</button></div><div><div class="dirt"><svg viewBox="0 0 96 96"><switch><polygon class="st0" points="0.1 0 0.1 96 32.1 96 32.1 64 32.1 64 64.1 64 64.1 32 96.1 32 96.1 0"></polygon></switch></svg><span class="price3">490 RUB</span></div><div class="tarif-name">MEGA</div><div class="tarif-price">490 RUB в месяц</div><div class="tarif-info"><span><dark>CPU:</dark>2 vCPU (4.2 Ghz)</span><span><dark>RAM:</dark><span>4096 Мбайт (DDR4)</span></span><span><dark>SSD:</dark><span>8192 Мбайт</span></span><span><dark>Слоты:</dark>Без ограничений</span></div><span class="tarif-span">Золотая середина! Отличные характеристики за относительно небольшую стоимость.</span><button class="button" tarif="3">Выбрать тариф</button></div><div><div class="dirt"><svg viewBox="0 0 96 96"><switch><polygon class="st0" points="0.1 0 0.1 96 32.1 96 32.1 64 32.1 64 64.1 64 64.1 32 96.1 32 96.1 0"></polygon></switch></svg><span class="price3">980 RUB</span></div><div class="tarif-name">UNLIMIT</div><div class="tarif-price">980 RUB в месяц</div><div class="tarif-info"><span><dark>CPU:</dark>4 vCPU (4.2 Ghz)</span><span><dark>RAM:</dark><span>8192 Мбайт (DDR4)</span></span><span><dark>SSD:</dark><span>16384 Мбайт</span></span><span><dark>Слоты:</dark>Без ограничений</span></div><span class="tarif-span">Максимальный тарифный план, подойдёт проектам, которым требуется максимум ресурсов.</span><button class="button" tarif="2">Выбрать тариф</button></div></div>
+    </div>
+    <div class="main">
+      <div>
+        <div id="loader" style="opacity: 0; display: none;">
+      <div>
+        <div class="square first"></div>
+        <div class="square second"></div>
+        <div class="square third"></div>
+        <div class="square fourth"></div>
+      </div>
+      <span>Загрузка данных...</span>
+    </div>
+      
+      
+        </section>
+        <section id="slide_10" class="active">
+          <h2>Оплата заказа</h2>
+          <h3>!! Внимательно проверь все введённые ранее данные, оплати свой заказ и получи долгожданный сервер!</h3>
+          <div class="select">
+            <ul>
+              <li><dark>Версия игры:</dark><span>Minecraft 1.14.4</span></li>
+              <li><dark>ИП Адресс:</dark><span>FordennRP.aternos.me</span></li>
+              <li><dark>Стоимость Проходки:</dark><span>15 Руб 00 коп</span></li>
+              <li><dark>Акции:</dark><span>Бесплатно до нового года</span></li>
+              <li><dark>Общая скидка:</dark><span>100% (00.00 RUB)</span></li>
+              <li><dark>Ник:</dark><span>Указать при покупке</span></li>
+            </ul>
+          </div>
+          <div id="price">Итого: <span>0.00 RUB</span></div>
+          <div class="buttons">
+            <button class="button"   onclick="window.location.href = 'https://w3docs.com';"> Назад </button>
+            <button class="button" onclick="window.location.href = 'https://donatepay.ru/don/341752';"> Оплатить</button>
+          </div>
+        </section>
+      </div>
+      <div>
+        <img src="./oplata_files/island_3.png">
+        <img src="./oplata_files/cloud_4.png">
+        <img src="./oplata_files/cloud_6.png">
+        <div class="hub">
+          <img src="./oplata_files/hub.png">
+          <div class="portal-anim"><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        </div>
+        <img src="./oplata_files/island_4.png">
+        <img src="./oplata_files/cloud_5.png">
+      </div>
+    </div>
+    <h1 style="display: none">Лучший хостинг для серверов Minecraft любых платформ!</h1>
+    <script src="./oplata_files/analytics.js(1).загрузка" type="text/javascript"></script>
+    <script src="./oplata_files/jquery.min.js.загрузка"></script>
+    <script src="./oplata_files/order.js.загрузка" type="text/javascript"></script>
+  
+
+</body></html>
